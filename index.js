@@ -137,8 +137,6 @@ function startApp() {
 
     expressApp.set('view engine', 'ejs')
 
-    expressApp.use('/css', express.static(`${__dirname}/node_modules/bootstrap/dist/css`))
-
     expressApp.set('trust proxy', 1)
     expressApp.use(session({
         secret: 'keyboard cat',
