@@ -8,6 +8,16 @@
 
     <div class="container mt-3">
         <h1>Welcome</h1>
+
+        <p class="lead">Here are some users to check out:</p>
+
+        <ul class="list-group">
+            <% users.forEach((user) => { %>
+                <li class="list-group-item">
+                    <a href="/user/<%= user.username %>"><%= user.username %></a>
+                </li>
+            <% }) %>
+          </ul>
     </div>
 </body>
 </html>
