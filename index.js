@@ -139,7 +139,7 @@ function startApp() {
 
     expressApp.set('trust proxy', 1)
     expressApp.use(session({
-        secret: 'keyboard cat',
+        secret: 'abc',
         resave: false,
         saveUninitialized: true,
         cookie: { secure: true }
